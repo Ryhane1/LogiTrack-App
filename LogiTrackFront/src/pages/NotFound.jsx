@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
-const AccessDenied = () => {
+const NotFound = () => {
   return (
     <div>
-        <p>404 Access Denied </p>
+        <p>404 Not Found</p>
         <Link to="/">Home</Link>
     </div>
   )
 }
 
-export default AccessDenied
+export default NotFound

@@ -1,0 +1,236 @@
+/* Réutilise les mêmes styles que Produits.css */
+.page-container { padding: 20px; }
+.page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.data-table { width: 100%; border-collapse: collapse; background-color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.data-table th, .data-table td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+.data-table th { background-color: #27ae60; color: white; }
+.data-table tr:hover { background-color: #f5f5f5; }
+
+.btn-primary, .btn-info, .btn-warning, .btn-danger {
+  padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer;
+  text-decoration: none; margin-right: 5px; color: white; display: inline-block;
+}
+.btn-primary { background-color: #3498db; }
+.btn-info { background-color: #17a2b8; }
+.btn-warning { background-color: #f39c12; }
+.btn-danger { background-color: #e74c3c; }
+
+.form { background-color: white; padding: 20px; border-radius: 8px; max-width: 500px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.form-group input, .form-group select { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+.error { color: #e74c3c; font-size: 12px; }
+.details-card { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+
+
+
+/*-----------------------
+        CONTAINER
+------------------------*/
+
+.medecins-container{
+    padding:30px;
+    width:100%;
+}
+
+
+.medecins-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+
+.medecins-header h1{
+    font-size:32px;
+    color:#1f2937;
+    font-weight:700;
+}
+
+.filter-select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*-----------------------
+       BUTTON AJOUTER
+------------------------*/
+
+.btn-add{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 24px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(37,99,235,0.25);
+    transition:0.3s ease;
+}
+
+
+.btn-add:hover{
+
+    background:#1d4ed8;
+    transform:translateY(-3px);
+
+}
+
+
+/*-----------------------
+        TABLE
+------------------------*/
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:15px;
+    background:white;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+
+thead{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+
+thead th{
+
+    padding:18px;
+    text-align:left;
+    font-size:16px;
+    font-weight:600;
+
+}
+
+
+tbody td{
+
+    padding:18px;
+    border-bottom:1px solid #e5e7eb;
+    color:#374151;
+
+}
+
+
+tbody tr{
+
+    transition:0.3s;
+
+}
+
+
+tbody tr:hover{
+
+    background:#f3f4f6;
+
+}
+
+
+/*-----------------------
+       ACTION BUTTONS
+------------------------*/
+
+.btn-info,
+.btn-warning,
+.btn-danger{
+
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:600;
+    margin-right:8px;
+    transition:0.3s ease;
+    border:none;
+    cursor:pointer;
+
+}
+
+
+/* Voir */
+
+.btn-info{
+
+    background:#10b981;
+    color:white;
+
+}
+
+.btn-info:hover{
+
+    background:#059669;
+
+}
+
+
+/* Modifier */
+
+.btn-warning{
+
+    background:#f59e0b;
+    color:white;
+
+}
+
+.btn-warning:hover{
+
+    background:#d97706;
+
+}
+
+
+/* Supprimer */
+
+.btn-danger{
+
+    background:#ef4444;
+    color:white;
+
+}
+
+.btn-danger:hover{
+
+    background:#dc2626;
+
+}
+
+
+
+/*-----------------------
+      RESPONSIVE
+------------------------*/
+
+@media(max-width:768px){
+
+    .medecins-header{
+
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+
+    table{
+
+        display:block;
+        overflow-x:auto;
+
+    }
+
+}
