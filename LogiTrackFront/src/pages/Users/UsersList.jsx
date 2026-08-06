@@ -7,7 +7,7 @@ import {toast} from "react-toastify";
 
 function UsersList() {
 
-    const [rdvs, setRdvs] = useState([]);
+    const [users, setUsers] = useState([]);
 
     useEffect(() => {
         loadData();
@@ -18,9 +18,9 @@ function UsersList() {
 
         try {
 
-            const res = await api.get("/rendezVous");
+            const res = await api.get("/users");
 
-            setRdvs(res.data.content);
+            setUsers(res.data.content);
 
         } catch (error) {
 
@@ -33,15 +33,15 @@ function UsersList() {
 
     const handleDelete = async (id) => {
 
-        if (window.confirm("Supprimer ce rendez-vous ?")) {
+        if (window.confirm("Supprimer ce User ?")) {
 
             try {
 
-                await api.delete(`/rendezVous/${id}`);
+                await api.delete(`/users/${id}`);
 
                 loadData();
 
-                toast.success("Rendez-Vous supprimé avec succès.")
+                toast.success("User supprimé avec succès.")
 
 
             } catch (error) {
@@ -64,10 +64,10 @@ function UsersList() {
 
             <div className="header">
 
-                <h1>Liste des Rendez-vous</h1>
+                <h1>Liste des Users</h1>
 
                 <Link
-                    to="/rendezvous/add"
+                    to="/users/add"
                     className="btn-add"
                 >
                     + Ajouter
@@ -81,10 +81,11 @@ function UsersList() {
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Date</th>
-                        <th>Patient</th>
-                        <th>Médecin</th>
-                        <th>Actions</th>
+                        <th>Nom</th>
+                        <th>Prenom</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
 
@@ -92,30 +93,34 @@ function UsersList() {
                 <tbody>
 
                     {Array.isArray(rdvs) &&
-                    rdvs.length > 0 ? (
+                    users.length > 0 ? (
 
-                        rdvs.map((r) => (
+                        users.map((r) => (
 
                             <tr key={r.id}>
 
                                 <td>{r.id}</td>
 
                                 <td>
-                                    {r.dateRendezVous}
+                                    {r.nom}
                                 </td>
 
                                 <td>
-                                    {r.patientId}
+                                    {r.prenom}
                                 </td>
 
                                 <td>
-                                    {r.medecinId}
+                                    {r.email}
+                                </td>
+
+                                <td>
+                                    {r.role}
                                 </td>
 
                                 <td>
 
                                     <Link
-                                        to={`/rendezvous/${r.id}`}
+                                        to={`/users/${r.id}`}
                                         className="btn-info"
                                     >
                                         Voir
@@ -124,7 +129,7 @@ function UsersList() {
                                     {" "}
 
                                     <Link
-                                        to={`/rendezvous/edit/${r.id}`}
+                                        to={`/users/edit/${r.id}`}
                                         className="btn-warning"
                                     >
                                         Modifier
@@ -152,7 +157,7 @@ function UsersList() {
                         <tr>
 
                             <td colSpan="5">
-                                Aucun rendez-vous trouvé.
+                                Aucun User trouvé.
                             </td>
 
                         </tr>

@@ -7,27 +7,27 @@ import Sidebar from "../../components/Sidebar";
 
 function UserDetails() {
   const { id } = useParams();
-  const [rdv, setRdv] = useState(null);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    api.get(`/rendezVous/${id}`).then((res) => setRdv(res.data));
+    api.get(`/Users/${id}`).then((res) => setUser(res.data));
   }, [id]);
 
-  if (!rdv) return <p>Chargement...</p>;
+  if (!user) return <p>Chargement...</p>;
 
   return (
     <>
     <Sidebar/>
     <div className="page-container">
-      <h1>Détails du Rendez-vous</h1>
+      <h1>Détails du User : </h1>
       <div className="details-card">
-        <p><strong>ID:</strong> {rdv.id}</p>
-        <p><strong>Date:</strong> {rdv.date}</p>
-        <p><strong>Patient:</strong> {rdv.patientId}</p>
-        <p><strong>Médecin:</strong> {rdv.medecinId}</p>
-        <p><strong>Motif:</strong> {rdv.motif}</p>
+        <p><strong>ID:</strong> {user.id}</p>
+        <p><strong>Nom:</strong> {user.nom}</p>
+        <p><strong>Prenom:</strong> {user.prenom}</p>
+        <p><strong>Email:</strong> {user.email}</p>
+        <p><strong>Role:</strong> {user.role}</p>
       </div>
-      <Link to="/rendezvous" className="btn-primary">Retour</Link>
+      <Link to="/users" className="btn-primary">Retour</Link>
     </div>
     </>
   );

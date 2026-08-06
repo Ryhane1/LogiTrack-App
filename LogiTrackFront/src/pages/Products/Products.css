@@ -1,0 +1,100 @@
+.products-container,
+.page-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.products-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.products-header h1 {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #f0f0f0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea,
+select {
+    padding: 8px;
+}
+
+.btn-add,
+.btn-primary,
+.btn-info,
+.btn-warning,
+.btn-danger {
+    padding: 6px 10px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-add,
+.btn-primary {
+    background: #1976d2;
+}
+
+.btn-info {
+    background: #17a2b8;
+}
+
+.btn-warning {
+    background: #f0ad4e;
+}
+
+.btn-danger {
+    background: #dc3545;
+}
+
+.details-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+.stock-danger {
+    color: red;
+    font-weight: bold;
+}

@@ -1,17 +1,14 @@
-import { Navigate } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 
-function RoleGuard({ children, role }) {
+function RoleGuard({ roles }) {
 
-    const token = localStorage.getItem("token");
     const userRole = localStorage.getItem("role");
 
-    if (!token) {
-        return <Navigate to="/" replace />;
+    if (!roles.includes(userRole)) {
+        return <Navigate to="/access-denied" replace />;
     }
 
-    return userRole === role
-        ? children
-        : <Navigate to="/unauthorized" replace />;
+    return <Outlet />;
 }
 
 export default RoleGuard;

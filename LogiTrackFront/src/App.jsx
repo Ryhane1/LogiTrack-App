@@ -1,122 +1,100 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import './App.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+
+import Dashboard from "./pages/Dashboard";
+
+import Clients from "./pages/clients/ClientsList";
+import ClientDetails from "./pages/clients/ClientDetails";
+import ClientForm from "./pages/clients/ClientForm";
+
+import Products from "./pages/products/ProductsList";
+import ProductDetails from "./pages/products/ProductDetails";
+import ProductForm from "./pages/products/ProductForm";
+
+import Orders from "./pages/orders/OrdersList";
+import OrderDetails from "./pages/orders/OrderDetails";
+import OrderForm from "./pages/orders/OrderForm";
+
+import Users from "./pages/users/UsersList";
+
+import Profile from "./pages/users/UserDetails";
+import AccessDenied from "./pages/AccessDenied";
+import NotFound from "./pages/NotFound";
+
+import AuthGuard from "./guards/AuthGuard";
+import RoleGuard from "./guards/RoleGuard";
+import UserForm from "./pages/Users/UserForm.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      <BrowserRouter>
+        <Routes>
 
-      <div className="ticks"></div>
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/access-denied" element={<AccessDenied />} />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+            <Route path="/products" element={<Products />} />
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+          <Route element={<AuthGuard />}>
+                <Route
+                    element={<RoleGuard roles={["ADMIN", "MANAGER", "AGENT"]} /> } >
+
+                      <Route path="clients" element={<Clients />} />
+                      <Route path="clients/:id" element={<ClientDetails />} />
+
+                      <Route path="products" element={<Products />} />
+                      <Route path="products/:id" element={<ProductDetails />} />
+
+                      <Route path="orders" element={<Orders />} />
+                      <Route path="orders/:id" element={<OrderDetails />} />
+
+                      <Route path="profile" element={<Profile />} />
+                </Route>
+
+
+                <Route
+                    element={ <RoleGuard roles={["ADMIN", "MANAGER"]} /> } >
+
+                      <Route path="dashboard" element={<Dashboard />} />
+
+                      <Route path="clients/new" element={<ClientForm />} />
+                      <Route path="clients/edit/:id" element={<ClientForm />} />
+
+                      <Route path="products/new" element={<ProductForm />} />
+                      <Route path="products/edit/:id" element={<ProductForm />} />
+
+                      <Route path="orders/new" element={<OrderForm />} />
+                      <Route path="orders/edit/:id" element={<OrderForm />} />
+                </Route>
+
+
+                <Route
+                    element={<RoleGuard roles={["ADMIN"]} /> }>
+
+                      <Route path="users" element={<Users />} />
+                      <Route path="users/edit/:id" element={<UserForm />} />
+
+                </Route>
+          </Route>
+
+          <Route path="*" element={<NotFound />} />
+
+        </Routes>
+      <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          theme="colored"
+      />
+      </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

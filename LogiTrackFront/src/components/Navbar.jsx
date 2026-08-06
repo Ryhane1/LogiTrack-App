@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
-// import "./Navbar.css";
 
 function Navbar() {
-  return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        <Link to="/">🏥 HealthCare+</Link>
-      </div>
+    const username = localStorage.getItem("username");
+    const role = localStorage.getItem("role");
 
-      <div className="navbar-user">
-        <span>Bienvenue</span>
-      </div>
-    </nav>
-  );
+    return (
+        <nav className="navbar">
+            <div className="navbar-logo">
+                <Link to="/dashboard">📦 LogiTrack</Link>
+            </div>
+
+            <div className="navbar-user">
+                <span>{username}</span>
+                <small>{role}</small>
+            </div>
+        </nav>
+    );
 }
 
 export default Navbar;
