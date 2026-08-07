@@ -9,6 +9,7 @@ function Register() {
 
     const [formData, setFormData] = useState({
         nom : "",
+        prenom: "",
         email: "",
         password: "",
         role: ""
@@ -69,7 +70,7 @@ function Register() {
                 onSubmit={handleSubmit}
             >
 
-                <h1>HealthCare+</h1>
+                <h1>LogiTrack</h1>
 
                 <h2>Créer un compte</h2>
 
@@ -78,6 +79,13 @@ function Register() {
                     type="text"
                     name="nom"
                     placeholder="Nom d'utilisateur"
+                    onChange={handleChange}
+                />
+
+                <input
+                    type="text"
+                    name="prenom"
+                    placeholder="Prenom d'utilisateur"
                     onChange={handleChange}
                 />
 

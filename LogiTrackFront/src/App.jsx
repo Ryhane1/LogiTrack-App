@@ -30,6 +30,10 @@ import NotFound from "./pages/NotFound";
 import AuthGuard from "./guards/AuthGuard";
 import RoleGuard from "./guards/RoleGuard";
 import UserForm from "./pages/Users/UserForm.jsx";
+import ProductsList from "./pages/products/ProductsList";
+import ClientsList from "./pages/clients/ClientsList";
+import OrdersList from "./pages/orders/OrdersList";
+import UserDetails from "./pages/users/UserDetails";
 
 function App() {
   return (
@@ -41,22 +45,21 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/access-denied" element={<AccessDenied />} />
 
-            <Route path="/products" element={<Products />} />
 
           <Route element={<AuthGuard />}>
                 <Route
                     element={<RoleGuard roles={["ADMIN", "MANAGER", "AGENT"]} /> } >
 
-                      <Route path="clients" element={<Clients />} />
+                      <Route path="clients" element={<ClientsList />} />
                       <Route path="clients/:id" element={<ClientDetails />} />
 
-                      <Route path="products" element={<Products />} />
+                      <Route path="products" element={<ProductsList />} />
                       <Route path="products/:id" element={<ProductDetails />} />
 
-                      <Route path="orders" element={<Orders />} />
+                      <Route path="orders" element={<OrdersList />} />
                       <Route path="orders/:id" element={<OrderDetails />} />
 
-                      <Route path="profile" element={<Profile />} />
+                      <Route path="profile" element={<UserDetails />} />
                 </Route>
 
 

@@ -34,15 +34,14 @@ function ProductDetails() {
 
         <div className="details-card">
           <p><strong>ID :</strong> {product.id}</p>
-          <p><strong>Nom :</strong> {product.name}</p>
-          <p><strong>Description :</strong> {product.description}</p>
-          <p><strong>Catégorie :</strong> {product.category}</p>
-          <p><strong>Prix :</strong> {product.price} DH</p>
-          <p><strong>Stock :</strong> {product.stock}</p>
+          <p><strong>Nom :</strong> {product.nom}</p>
+          <p><strong>Catégorie :</strong> {product.categorie}</p>
+          <p><strong>Prix :</strong> {product.prix} DH</p>
+          <p><strong>Stock :</strong> {product.quantiteStock}</p>
 
           <p>
             <strong>État du stock :</strong>{" "}
-            {product.stock <= 10 ? (
+            {product.quantiteStock <= 10 ? (
                 <span style={{ color: "red", fontWeight: "bold" }}>
               Stock faible
             </span>

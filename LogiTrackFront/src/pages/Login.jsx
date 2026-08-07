@@ -40,6 +40,7 @@ function Login() {
 
             console.log(decoded);
 
+            localStorage.setItem("id",decoded.sub)
             localStorage.setItem("nom", decoded.sub);
 
             localStorage.setItem(
@@ -72,7 +73,7 @@ function Login() {
                 onSubmit={handleSubmit}
             >
 
-                <h1>HealthCare+</h1>
+                <h1>LogiTrack</h1>
 
                 <h3>
                     Connexion

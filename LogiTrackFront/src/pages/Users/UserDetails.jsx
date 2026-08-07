@@ -6,12 +6,14 @@ import Sidebar from "../../components/Sidebar";
 
 
 function UserDetails() {
-  const { id } = useParams();
+  const { idx } = useParams();
   const [user, setUser] = useState(null);
 
+  const nom = localStorage.getItem("nom");
+
   useEffect(() => {
-    api.get(`/Users/${id}`).then((res) => setUser(res.data));
-  }, [id]);
+    api.get(`/users/me?nom=${nom}`).then((res) => setUser(res.data));
+  }, [nom]);
 
   if (!user) return <p>Chargement...</p>;
 
@@ -27,7 +29,8 @@ function UserDetails() {
         <p><strong>Email:</strong> {user.email}</p>
         <p><strong>Role:</strong> {user.role}</p>
       </div>
-      <Link to="/users" className="btn-primary">Retour</Link>
+      <Link to="/dashboard" className="btn-primary">Retour</Link>
+      <Link to={`/users/edit/${user.id}`} className="btn-primary">Modifier</Link>
     </div>
     </>
   );

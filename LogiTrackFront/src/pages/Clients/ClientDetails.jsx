@@ -2,106 +2,99 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import api from "../../api/axios";
 import "./Clients.css";
-import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
 
-function OrderDetails() {
+function ClientDetails() {
   const { id } = useParams();
-  const [order, setOrder] = useState(null);
+  const [client, setClient] = useState(null);
 
   useEffect(() => {
-    loadOrder();
+    loadClient();
   }, [id]);
 
-  const loadOrder = async () => {
+  const loadClient = async () => {
     try {
-      const response = await api.get(`/orders/${id}`);
-      setOrder(response.data);
+      const response = await api.get(`/clients/${id}`);
+      setClient(response.data);
     } catch (error) {
       console.error(error);
     }
   };
 
-  if (!order) {
-    return <p>Chargement...</p>;
-  }
+  if (!client) return <h2>Chargement...</h2>;
 
   return (
       <>
-        <Navbar />
-        <div style={{ display: "flex" }}>
-          <Sidebar />
-          <div className="page-container">
-            <h1>Détails de la Commande</h1>
+        <Sidebar />
+        <div className="container">
+          <div className="details-card">
+            <h2>Détails du Client</h2>
 
-            <div className="details-card">
-              <p>
-                <strong>ID :</strong> {order.id}
-              </p>
+            <p>
+              <strong>ID :</strong> {client.id}
+            </p>
 
-              <p>
-                <strong>Date :</strong> {order.dateCommande}
-              </p>
+            <p>
+              <strong>Nom :</strong> {client.nom}
+            </p>
 
-              <p>
-                <strong>Statut :</strong> {order.status}
-              </p>
+            <p>
+              <strong>Prénom :</strong> {client.prenom}
+            </p>
 
-              <p>
-                <strong>Total :</strong> {order.total} DH
-              </p>
+            <p>
+              <strong>Email :</strong> {client.email}
+            </p>
 
-              <h3>Client</h3>
+            <p>
+              <strong>Téléphone :</strong> {client.telephone}
+            </p>
 
-              <p>
-                <strong>Nom :</strong> {order.client?.nom}
-              </p>
+            <p>
+              <strong>Adresse :</strong> {client.adresse}
+            </p>
 
-              <p>
-                <strong>Prénom :</strong> {order.client?.prenom}
-              </p>
+            <h3>Commandes du client</h3>
 
-              <p>
-                <strong>Email :</strong> {order.client?.email}
-              </p>
+            {client.orders && client.orders.length > 0 ? (
+                <table>
+                  <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>Statut</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                  </tr>
+                  </thead>
 
-              <h3>Produits</h3>
-
-              {order.products && order.products.length > 0 ? (
-                  <table>
-                    <thead>
-                    <tr>
-                      <th>Produit</th>
-                      <th>Prix</th>
-                      <th>Quantité</th>
-                    </tr>
-                    </thead>
-
-                    <tbody>
-                    {order.products.map((product) => (
-                        <tr key={product.id}>
-                          <td>
-                            {product.name}
-                          </td>
-                          <td>
-                            {product.price} DH
-                          </td>
-                          <td>
-                            {product.quantity}
-                          </td>
-                        </tr>
-                    ))}
-                    </tbody>
-                  </table>
-              ) : (
-                  <p>
-                    Aucun produit dans cette commande
-                  </p>
-              )}
-            </div>
+                  <tbody>
+                  {client.orders.map((order) => (
+                      <tr key={order.id}>
+                        <td>{order.id}</td>
+                        <td>{order.dateCommande}</td>
+                        <td>{order.statut}</td>
+                        <td>{order.total} DH</td>
+                        <td>
+                          <Link
+                              to={`/orders/${order.id}`}
+                              className="btn-info"
+                          >
+                            Voir
+                          </Link>
+                        </td>
+                      </tr>
+                  ))}
+                  </tbody>
+                </table>
+            ) : (
+                <p>
+                  Aucune commande trouvée.
+                </p>
+            )}
 
             <Link
-                to="/orders"
+                to="/clients"
                 className="btn-primary"
             >
               Retour
@@ -112,4 +105,4 @@ function OrderDetails() {
   );
 }
 
-export default OrderDetails;
+export default ClientDetails;

@@ -2,176 +2,122 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../api/axios";
 import "./Clients.css";
-import { toast } from "react-toastify";
-import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
+import { toast } from "react-toastify";
 
-function OrdersList() {
-    const [orders, setOrders] = useState([]);
-    const [statusFilter, setStatusFilter] = useState("");
+function ClientsList() {
+    const [clients, setClients] = useState([]);
     const role = localStorage.getItem("role");
 
     useEffect(() => {
-        loadOrders();
+        loadData();
     }, []);
 
-    const loadOrders = async () => {
+    const loadData = async () => {
         try {
-            const response = await api.get("/orders");
-            setOrders(response.data.content ? response.data.content : response.data);
+            const res = await api.get("/clients");
+            setClients(res.data.content);
         } catch (error) {
             console.error(error);
-            toast.error("Erreur chargement des commandes");
+            toast.error("Erreur lors du chargement.");
         }
     };
 
-    const updateStatus = async (id, status) => {
+    const handleDelete = async (id) => {
+        if (!window.confirm("Supprimer ce client ?")) return;
+
         try {
-            await api.put(`/orders/${id}/status`, {
-                status: status
-            });
-            toast.success("Statut modifié");
-            loadOrders();
+            await api.delete(`/clients/${id}`);
+            toast.success("Client supprimé avec succès.");
+            loadData();
         } catch (error) {
             console.error(error);
-            toast.error("Erreur modification statut");
+            toast.error("Erreur lors de la suppression.");
         }
     };
-
-    const filteredOrders = orders.filter((order) => {
-        if (statusFilter === "") {
-            return true;
-        }
-        return order.status === statusFilter;
-    });
 
     return (
         <>
-            <Navbar />
-            <div style={{ display: "flex" }}>
-                <Sidebar />
-                <div className="orders-container">
-                    <div className="orders-header">
-                        <h1>Liste des Commandes</h1>
+            <Sidebar />
 
-                        {role !== "AGENT" && (
-                            <Link to="/orders/new" className="btn-add">
-                                + Nouvelle commande
-                            </Link>
-                        )}
+            <div className="container">
+                <div className="header">
+                    <h1>Liste des Clients</h1>
 
-                        <select
-                            value={statusFilter}
-                            onChange={(e) => setStatusFilter(e.target.value)}
-                            className="filter-select"
-                        >
-                            <option value="">
-                                Tous les statuts
-                            </option>
-                            <option value="EN_ATTENTE">
-                                EN_ATTENTE
-                            </option>
-                            <option value="EXPEDIEE">
-                                EXPEDIEE
-                            </option>
-                            <option value="LIVREE">
-                                LIVREE
-                            </option>
-                        </select>
-                    </div>
+                    <Link
+                        to="/clients/add"
+                        className="btn-add"
+                    >
+                        + Ajouter
+                    </Link>
+                </div>
 
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Client</th>
-                            <th>Date</th>
-                            <th>Total</th>
-                            <th>Statut</th>
-                            <th>Actions</th>
-                        </tr>
-                        </thead>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                        <th>Téléphone</th>
+                        <th>Adresse</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
 
-                        <tbody>
-                        {filteredOrders.length > 0 ? (
-                            filteredOrders.map((order) => (
-                                <tr key={order.id}>
-                                    <td>{order.id}</td>
+                    <tbody>
+                    {Array.isArray(clients) && clients.length > 0 ? (
+                        clients.map((client) => (
+                            <tr key={client.id}>
+                                <td>{client.id}</td>
+                                <td>{client.nom}</td>
+                                <td>{client.prenom}</td>
+                                <td>{client.email}</td>
+                                <td>{client.telephone}</td>
+                                <td>{client.adresse}</td>
 
-                                    <td>
-                                        {order.client?.nom}
-                                        {" "}
-                                        {order.client?.prenom}
-                                    </td>
+                                <td>
+                                    <Link
+                                        to={`/clients/${client.id}`}
+                                        className="btn-info"
+                                    >
+                                        Voir
+                                    </Link>
 
-                                    <td>
-                                        {order.dateCommande}
-                                    </td>
+                                    {" "}
 
-                                    <td>
-                                        {order.total} DH
-                                    </td>
+                                    <Link
+                                        to={`/clients/edit/${client.id}`}
+                                        className="btn-warning"
+                                    >
+                                        Modifier
+                                    </Link>
 
-                                    <td>
-                                        {role !== "AGENT" ? (
-                                            <select
-                                                value={order.status}
-                                                onChange={(e) =>
-                                                    updateStatus(
-                                                        order.id,
-                                                        e.target.value
-                                                    )
-                                                }
-                                            >
-                                                <option value="EN_ATTENTE">
-                                                    EN_ATTENTE
-                                                </option>
-                                                <option value="EXPEDIEE">
-                                                    EXPEDIEE
-                                                </option>
-                                                <option value="LIVREE">
-                                                    LIVREE
-                                                </option>
-                                            </select>
-                                        ) : (
-                                            order.status
-                                        )}
-                                    </td>
+                                    {" "}
 
-                                    <td>
-                                        <Link
-                                            to={`/orders/${order.id}`}
-                                            className="btn-info"
+                                    {role === "ADMIN" && (
+                                        <button
+                                            className="btn-danger"
+                                            onClick={() => handleDelete(client.id)}
                                         >
-                                            Voir
-                                        </Link>
-
-                                        {" "}
-
-                                        {role !== "AGENT" && (
-                                            <Link
-                                                to={`/orders/edit/${order.id}`}
-                                                className="btn-warning"
-                                            >
-                                                Modifier
-                                            </Link>
-                                        )}
-                                    </td>
-                                </tr>
-                            ))
-                        ) : (
-                            <tr>
-                                <td colSpan="6">
-                                    Aucune commande trouvée
+                                            Supprimer
+                                        </button>
+                                    )}
                                 </td>
                             </tr>
-                        )}
-                        </tbody>
-                    </table>
-                </div>
+                        ))
+                    ) : (
+                        <tr>
+                            <td colSpan="7">
+                                Aucun client trouvé.
+                            </td>
+                        </tr>
+                    )}
+                    </tbody>
+                </table>
             </div>
         </>
     );
 }
 
-export default OrdersList;
+export default ClientsList;

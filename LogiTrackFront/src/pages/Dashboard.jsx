@@ -75,7 +75,7 @@ function Dashboard() {
                 stock,
                 top
             ] = await Promise.all([
-                api.get("/products/low-stock"),
+                api.get("/products/lowStock"),
                 api.get("/statistics/topProduct")
             ]);
 
@@ -182,10 +182,10 @@ function Dashboard() {
                                     lowStockProducts.map(product=>(
                                         <tr key={product.id}>
                                             <td>
-                                                {product.name}
+                                                {product.nom}
                                             </td>
                                             <td>
-                                                {product.stock}
+                                                {product.quantiteStock}
                                             </td>
                                         </tr>
                                     ))
@@ -239,7 +239,7 @@ function Dashboard() {
                                         {order.client?.nom}
                                     </td>
                                     <td>
-                                        {order.status}
+                                        {order.statut}
                                     </td>
                                 </tr>
                             ))}

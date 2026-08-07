@@ -20,7 +20,7 @@ function ProductsList() {
     const loadProducts = async () => {
         try {
             const response = await api.get("/products");
-            console.log(response.data);
+            console.log(response.data.content);
             setProducts(response.data.content ? response.data.content : response.data);
         } catch (error) {
             console.error(error);
@@ -34,6 +34,7 @@ function ProductsList() {
         if (categoryFilter && product.category !== categoryFilter) return false;
         if (maxPrice && product.price > Number(maxPrice)) return false;
         if (lowStock && product.stock > 10) return false;
+
         return true;
     });
 
@@ -54,6 +55,7 @@ function ProductsList() {
             console.error(error);
             toast.error("Erreur suppression produit");
         }
+        console.log(filteredProducts)
     };
 
     return (
@@ -121,14 +123,14 @@ function ProductsList() {
                     filteredProducts.map((product) => (
                         <tr key={product.id}>
                             <td>{product.id}</td>
-                            <td>{product.name}</td>
-                            <td>{product.category}</td>
-                            <td>{product.price} DH</td>
+                            <td>{product.nom}</td>
+                            <td>{product.categorie}</td>
+                            <td>{product.prix} DH</td>
                             <td>
-                                {product.stock <= 10 ? (
-                                    <span className="stock-danger">{product.stock}</span>
+                                {product.quantiteStock <= 10 ? (
+                                    <span className="stock-danger">{product.quantiteStock}</span>
                                 ) : (
-                                    product.stock
+                                    product.quantiteStock
                                 )}
                             </td>
                             <td>
@@ -168,7 +170,6 @@ function ProductsList() {
         </div>
         </div>
 
-        <Pagination count={10} variant="outlined" shape="rounded" />
     </>
     );
 }

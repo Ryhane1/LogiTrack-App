@@ -1,211 +1,170 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../api/axios";
-
 import "./Orders.css";
-import Sidebar from "../../components/Sidebar.jsx";
-import {toast} from "react-toastify";
+import Sidebar from "../../components/Sidebar";
+import { toast } from "react-toastify";
 
 function OrdersList() {
-
-    const [patients, setPatients] = useState([]);
-    const [searchTerm , setSearchTerm] = useState("");
-    const [sortOrder, setSortOrder] = useState("asc");
-
-
-    const loadPatients = async () => {
-
-        try {
-            const response = await api.get("/patient");
-
-            setPatients(response.data.content);
-        }
-        catch (error) {
-
-            console.log(error);
-
-        }
-
-    };
-
+    const [orders, setOrders] = useState([]);
+    const [clients, setClients] = useState([]);
+    const [status, setStatus] = useState("");
+    const [clientId, setClientId] = useState("");
 
     useEffect(() => {
-
-        loadPatients();
-
+        loadClients();
+        loadOrders();
     }, []);
 
-
-    const filteredPatients = patients.filter((patient) =>
-        patient.nom.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    const sortedPatients = [...filteredPatients].sort((a, b) => {
-        if (sortOrder === "asc") {
-            return a.nom.localeCompare(b.nom);
-        } else {
-            return b.nom.localeCompare(a.nom);
-        }
-    });
-
-
-    const handleDelete = async (id) => {
-
-        const confirmation = window.confirm(
-            "Supprimer ce patient ?"
-        );
-
-        if (!confirmation) return;
-
-
+    const loadClients = async () => {
         try {
-
-            await api.delete(`/patient/${id}`);
-
-            loadPatients();
-
-            toast.success("Patient supprimé avec succès.")
-
+            const res = await api.get("/clients");
+            setClients(res.data.content || res.data);
         } catch (error) {
-
-            toast.error("Erreur lors de la suppression.");
-            console.log(error);
-
+            console.error(error);
         }
-
     };
 
+    const loadOrders = async () => {
+        try {
+            let url = "/orders";
+
+            if (clientId && status) {
+                url = `/orders?clientId=${clientId}&status=${status}`;
+            } else if (clientId) {
+                url = `/orders?clientId=${clientId}`;
+            } else if (status) {
+                url = `/orders?status=${status}`;
+            }
+
+            const res = await api.get(url);
+            setOrders(res.data.content || res.data);
+        } catch (error) {
+            console.error(error);
+            toast.error("Erreur lors du chargement.");
+        }
+    };
+
+    useEffect(() => {
+        loadOrders();
+    }, [clientId, status]);
 
     return (
-
         <>
-        <Sidebar/>
+            <Sidebar />
 
-        <div className="patients-container">
+            <div className="container">
+                <div className="header">
+                    <h1>Liste des Commandes</h1>
 
+                    <Link
+                        to="/orders/add"
+                        className="btn-add"
+                    >
+                        + Nouvelle commande
+                    </Link>
+                </div>
 
-            <div className="patients-header">
+                <div className="filters">
+                    <select
+                        value={clientId}
+                        onChange={(e) => setClientId(e.target.value)}
+                    >
+                        <option value="">
+                            Tous les clients
+                        </option>
 
-                <h1>
-                    Liste des Patients
-                </h1>
+                        {clients.map((client) => (
+                            <option
+                                key={client.id}
+                                value={client.id}
+                            >
+                                {client.nom} {client.prenom}
+                            </option>
+                        ))}
+                    </select>
 
-                <input className="recherchInput"
-                    type="text"
-                    placeholder="Chercher par Nom"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                />
-                <select
-                    value={sortOrder}
-                    onChange={(e) => setSortOrder(e.target.value)}
-                >
-                    <option value="asc">A → Z</option>
-                    <option value="desc">Z → A</option>
-                </select>
+                    <select
+                        value={status}
+                        onChange={(e) => setStatus(e.target.value)}
+                    >
+                        <option value="">
+                            Tous les statuts
+                        </option>
 
-                <Link
-                    to="/patients/add"
-                    className="btn-add"
-                >
-                    + Ajouter
-                </Link>
+                        <option value="EN_ATTENTE">
+                            EN_ATTENTE
+                        </option>
 
-            </div>
+                        <option value="EXPEDIEE">
+                            EXPEDIEE
+                        </option>
 
+                        <option value="LIVREE">
+                            LIVREE
+                        </option>
+                    </select>
+                </div>
 
-
-            <table>
-
-                <thead>
-
-                <tr>
-
-                    <th>ID</th>
-                    <th>Nom</th>
-                    <th>Prénom</th>
-                    <th>Email</th>
-                    <th>Actions</th>
-
-                </tr>
-
-                </thead>
-
-
-                <tbody>
-
-                {Array.isArray(patients) &&
-                sortedPatients.length > 0 ? (
-
-                    sortedPatients.map((patient) => (
-
-                        <tr key={patient.id}>
-
-                            <td>{patient.id}</td>
-
-                            <td>{patient.nom}</td>
-
-                            <td>{patient.prenom}</td>
-
-                            <td>{patient.email}</td>
-
-
-                            <td>
-
-                                <Link
-                                    to={`/patients/${patient.id}`}
-                                    className="btn-info"
-                                >
-                                    Voir
-                                </Link>
-
-                                {" "}
-
-                                <Link
-                                    to={`/patients/edit/${patient.id}`}
-                                    className="btn-warning"
-                                >
-                                    Modifier
-                                </Link>
-
-                                {" "}
-
-                                <button
-                                    className="btn-danger"
-                                    onClick={() =>
-                                        handleDelete(patient.id)
-                                    }
-                                >
-                                    Supprimer
-                                </button>
-
-                            </td>
-
-                        </tr>
-
-                    ))
-
-                ) : (
-
+                <table>
+                    <thead>
                     <tr>
-
-                        <td colSpan="5">
-                            Aucun patient trouvé.
-                        </td>
-
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Client</th>
+                        <th>Total</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
                     </tr>
+                    </thead>
 
-                )}
+                    <tbody>
+                    {orders.length > 0 ? (
+                        orders.map((order) => (
+                            <tr key={order.id}>
+                                <td>{order.id}</td>
 
-                </tbody>
+                                <td>{order.dateCommande}</td>
 
-            </table>
+                                <td>
+                                    {order.client?.nom} {order.client?.prenom}
+                                </td>
 
-        </div>
-    </>
+                                <td>{order.total} DH</td>
 
+                                <td>{order.statut}</td>
+
+                                <td>
+                                    <Link
+                                        to={`/orders/${order.id}`}
+                                        className="btn-info"
+                                    >
+                                        Voir
+                                    </Link>
+
+                                    {" "}
+
+                                    <Link
+                                        to={`/orders/edit/${order.id}`}
+                                        className="btn-warning"
+                                    >
+                                        Modifier
+                                    </Link>
+                                </td>
+                            </tr>
+                        ))
+                    ) : (
+                        <tr>
+                            <td colSpan="6">
+                                Aucune commande trouvée.
+                            </td>
+                        </tr>
+                    )}
+                    </tbody>
+                </table>
+            </div>
+        </>
     );
-
 }
 
 export default OrdersList;

@@ -6,187 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="7720fd33-9a70-4548-b713-093eb9dfaae7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../LogiTrackBack" beforeDir="false" afterPath="$PROJECT_DIR$/../LogiTrackBack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/oxlint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/oxlint.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/oxlint.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/rolldown-runtime-BvCyGRYZ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@oxc-project/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@oxc-project/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@oxc-project/types/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@oxc-project/types/types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@oxlint/binding-win32-x64-msvc/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@oxlint/binding-win32-x64-msvc/oxlint.win32-x64-msvc.node" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@oxlint/binding-win32-x64-msvc/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@rolldown/binding-win32-x64-msvc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@rolldown/binding-win32-x64-msvc/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@rolldown/binding-win32-x64-msvc/rolldown-binding.win32-x64-msvc.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@rolldown/binding-win32-x64-msvc/rolldown-binding.win32-x64-msvc.node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/react-dom/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react-dom/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/react-dom/canary.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react-dom/canary.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/react-dom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react-dom/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/react/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/react/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/react/ts5.0/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react/ts5.0/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vitejs/plugin-react/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vitejs/plugin-react/dist/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vitejs/plugin-react/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vitejs/plugin-react/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vitejs/plugin-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vitejs/plugin-react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss-win32-x64-msvc/lightningcss.win32-x64-msvc.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lightningcss-win32-x64-msvc/lightningcss.win32-x64-msvc.node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss-win32-x64-msvc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lightningcss-win32-x64-msvc/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss/node/ast.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lightningcss/node/ast.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss/node/ast.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lightningcss/node/ast.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lightningcss/node/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss/node/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lightningcss/node/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lightningcss/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/async/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/async/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.browser.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.browser.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/bin/oxlint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/configuration_schema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/bindings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/cli.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/js_config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/lint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/plugins-dev.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/plugins-dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/workspace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/dist/workspace2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/oxlint/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/lazy-result.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/lazy-result.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/node.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/node.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/previous-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/previous-map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/processor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/stringifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/stringifier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/warning.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/warning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-client.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-client.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-client.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-client.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-profiling.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-profiling.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-profiling.profiling.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-profiling.profiling.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server-legacy.browser.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server-legacy.browser.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.browser.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.browser.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.browser.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.browser.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.bun.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.bun.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.bun.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.bun.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.edge.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.edge.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.edge.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.edge.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.react-server.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.react-server.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.react-server.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.react-server.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-dom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-dom/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react/cjs/react.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react/cjs/react.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react.react-server.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react/cjs/react.react-server.development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/cjs/react.react-server.production.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react/cjs/react.react-server.production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/THIRD-PARTY-LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/cli.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/cli.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/cli.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/cli.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/config.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/config.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/experimental-default-runtime.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/experimental-index.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/experimental-index.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/experimental-index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/experimental-index.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/experimental-runtime-base.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/experimental-runtime-types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/experimental-runtime-types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/experimental-runtime.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/experimental-runtime.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/filter-index.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/filter-index.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/filter-index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/filter-index.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/get-log-filter.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/get-log-filter.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/index.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/index.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/index.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/parallel-plugin-worker.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/parallel-plugin-worker.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/parallel-plugin-worker.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/parallel-plugin-worker.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/parallel-plugin.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/parallel-plugin.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/parse-ast-index.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/parse-ast-index.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/parse-ast-index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/parse-ast-index.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/plugins-index.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/plugins-index.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/plugins-index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/plugins-index.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/binding-CVtkJvyl.d.mts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/binding-DwUQWZOo.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/bindingify-input-options-BHixd47T.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/constructors-ALilxAii.d.mts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/constructors-COwFYQna.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/create-bundler-option-LuUKlAT7.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/define-config-DSMNXceb.d.mts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/error-nLggAzpQ.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/get-log-filter-AjBknEEO.d.mts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/load-config-cRWJAHTc.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/logging-xuHO4mAy.d.mts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/logs-DmYCAKcW.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/misc-DOSKtd97.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/normalize-string-or-regex-Cj-DgIV1.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/parse-C17W7W5g.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/prompt-CH6TK0bC.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/resolve-tsconfig-CE3HNSOK.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/rolldown-D23fYgSS.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/transform-WmU_cI8e.d.mts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/shared/watch-DcgK_L55.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/utils-index.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/utils-index.d.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/dist/utils-index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/dist/utils-index.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rolldown/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rolldown/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/client/bundledDevClient.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/client/client.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/client/client.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/postcss-import.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/postcss-import.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/module-runner.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/module-runner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/types/customEvent.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/types/customEvent.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/types/hmrPayload.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/types/hmrPayload.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/axios.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guards/PrivateRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/guards/AuthGuard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guards/RoleGuard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/guards/RoleGuard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/About.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Clients/ClientDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/ClientDetails.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Clients/ClientForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/ClientForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Clients/ClientsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/ClientsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Commandes/CommandDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/ProductDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Commandes/CommandForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/ProductForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Commandes/Commands.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/Products.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Commandes/CommandsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/ProductsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Produits/ProduitDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrderDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Produits/ProduitForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrderForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Produits/Produits.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/Orders.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Produits/ProduitsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrdersList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Orders/OrderDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrderDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Orders/OrderForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrderForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Orders/OrdersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrdersList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Products/ProductDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/ProductDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Products/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/ProductsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Users/UserDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/UserDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Users/UsersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/UsersList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users/UserForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/UserForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,112 +39,112 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ryhane1"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ryhane1&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ryhane1/LogiTrack-App.git",
-    "accountId": "9496ee63-fbfc-4ad7-95b3-3d1bf0661724"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ryhane1/LogiTrack-App.git&quot;,
+    &quot;accountId&quot;: &quot;9496ee63-fbfc-4ad7-95b3-3d1bf0661724&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000015616" />
-      <entry key="MS500" value="1.004353072390621" />
-      <entry key="S2" value="1.286312376592186" />
-      <entry key="S5" value="1.824770501222824" />
-      <entry key="S10" value="2.256109602629583" />
-      <entry key="S30" value="2.704364566348921" />
-      <entry key="S60" value="2.874539029414317" />
-      <entry key="M2" value="3.2682380812939056" />
-      <entry key="M5" value="4.771431151580902" />
-      <entry key="M10" value="6.232881790574841" />
-      <entry key="M15" value="6.980132775074437" />
-      <entry key="M30" value="8.259386907752514" />
-      <entry key="H1" value="11.98810897430039" />
-      <entry key="H2" value="22.93166050722467" />
-      <entry key="H4" value="39.54266808900555" />
-      <entry key="D1" value="70.35845512790794" />
-      <entry key="W1" value="78.52473370826858" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000000146327" />
+      <entry key="S2" value="1.001955834483811" />
+      <entry key="S5" value="1.0825149877642848" />
+      <entry key="S10" value="1.2872542214907987" />
+      <entry key="S30" value="1.6598149324166793" />
+      <entry key="S60" value="1.8122899312540315" />
+      <entry key="M2" value="1.9012712880526683" />
+      <entry key="M5" value="1.9597645063170996" />
+      <entry key="M10" value="2.010862678018586" />
+      <entry key="M15" value="2.11473573482904" />
+      <entry key="M30" value="2.653782137865875" />
+      <entry key="H1" value="4.642328069285126" />
+      <entry key="H2" value="11.832494903579917" />
+      <entry key="H4" value="30.40394030790148" />
+      <entry key="D1" value="97.71761608945016" />
+      <entry key="W1" value="123.87416204900178" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.8689807655002535E-118" />
-      <entry key="S5" value="1.2461654807799804E-47" />
-      <entry key="S10" value="5.8340022311679206E-24" />
-      <entry key="S30" value="3.7058582900094585E-8" />
-      <entry key="S60" value="3.330072449845483E-4" />
-      <entry key="M2" value="0.03159737560853504" />
-      <entry key="M5" value="0.48540105901743913" />
-      <entry key="M10" value="1.2070810165562815" />
-      <entry key="M15" value="1.6398377955032017" />
-      <entry key="M30" value="2.2979558784431298" />
-      <entry key="H1" value="3.1258380659688694" />
-      <entry key="H2" value="4.763104991970404" />
-      <entry key="H4" value="7.133653005959321" />
-      <entry key="D1" value="11.588505672847303" />
-      <entry key="W1" value="12.783558036122022" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="1.0312621009449118E-222" />
+      <entry key="S60" value="2.0479545877310045E-111" />
+      <entry key="M2" value="1.0883431542548538E-55" />
+      <entry key="M5" value="3.4009205695403108E-22" />
+      <entry key="M10" value="5.253776119537849E-11" />
+      <entry key="M15" value="2.9409565495278896E-7" />
+      <entry key="M30" value="0.00194978679634366" />
+      <entry key="H1" value="0.20038011749596613" />
+      <entry key="H2" value="2.3453833262380304" />
+      <entry key="H4" value="8.727139848472136" />
+      <entry key="D1" value="28.689599839506926" />
+      <entry key="W1" value="35.66485159163023" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.1550366120379967E-4" />
-      <entry key="MS500" value="0.18527954059502627" />
-      <entry key="S2" value="0.8049575607811453" />
-      <entry key="S5" value="1.372952517921036" />
-      <entry key="S10" value="1.8511533532951199" />
-      <entry key="S30" value="2.4825823058981804" />
-      <entry key="S60" value="2.7461986271171264" />
-      <entry key="M2" value="3.2251520028689185" />
-      <entry key="M5" value="5.217608618264389" />
-      <entry key="M10" value="7.4163533440839" />
-      <entry key="M15" value="8.602893657036612" />
-      <entry key="M30" value="10.547724961103185" />
-      <entry key="H1" value="15.10816854681784" />
-      <entry key="H2" value="27.690741346178594" />
-      <entry key="H4" value="46.67342415377137" />
-      <entry key="D1" value="81.9461812158071" />
-      <entry key="W1" value="91.30816855808534" />
+      <entry key="MS100" value="7.1262205717133875E-12" />
+      <entry key="MS500" value="0.005896195190712089" />
+      <entry key="S2" value="0.278146056017497" />
+      <entry key="S5" value="0.6626318107807629" />
+      <entry key="S10" value="1.0268831652565888" />
+      <entry key="S30" value="1.5506886186363658" />
+      <entry key="S60" value="1.7535403847786273" />
+      <entry key="M2" value="1.8706993115208645" />
+      <entry key="M5" value="1.9472225344495546" />
+      <entry key="M10" value="2.0044128830231087" />
+      <entry key="M15" value="2.110169325855299" />
+      <entry key="M30" value="2.6529176159333843" />
+      <entry key="H1" value="4.840699702760261" />
+      <entry key="H2" value="14.17556867476558" />
+      <entry key="H4" value="39.12813775497037" />
+      <entry key="D1" value="126.40574303922314" />
+      <entry key="W1" value="159.53875172952425" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="3HXEiEy8Z5oNmsIM9XC9qSZcxqU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

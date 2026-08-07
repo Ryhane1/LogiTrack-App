@@ -1,24 +1,24 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useNavigate, useParams } from "react-router-dom";
 import api from "../../api/axios";
 import "./Clients.css";
-import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
+import { toast } from "react-toastify";
 
 const schema = yup.object({
-  clientId: yup.number().required("Client requis"),
-  status: yup.string().required("Statut requis")
+  nom: yup.string().required("Nom requis"),
+  prenom: yup.string().required("Prénom requis"),
+  email: yup.string().email("Email invalide").required("Email requis"),
+  telephone: yup.string().required("Téléphone requis"),
+  adresse: yup.string().required("Adresse requise")
 });
 
-function OrderForm() {
+function ClientForm() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [clients, setClients] = useState([]);
-  const [products, setProducts] = useState([]);
-  const [orderProducts, setOrderProducts] = useState([]);
 
   const {
     register,
@@ -30,267 +30,122 @@ function OrderForm() {
   });
 
   useEffect(() => {
-    loadClients();
-    loadProducts();
-
     if (id) {
-      loadOrder();
+      loadClient();
     }
   }, [id]);
 
-  const loadClients = async () => {
+  const loadClient = async () => {
     try {
-      const response = await api.get("/clients");
-      setClients(response.data.content || response.data);
+      const response = await api.get(`/clients/${id}`);
+      reset(response.data);
     } catch (error) {
       console.error(error);
     }
-  };
-
-  const loadProducts = async () => {
-    try {
-      const response = await api.get("/products");
-      setProducts(response.data.content || response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const loadOrder = async () => {
-    try {
-      const response = await api.get(`/orders/${id}`);
-      reset({
-        clientId: response.data.client.id,
-        status: response.data.status
-      });
-      setOrderProducts(response.data.products || []);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const addProduct = (productId) => {
-    const product = products.find(
-        (p) => p.id === Number(productId)
-    );
-
-    if (!product) return;
-
-    const exist = orderProducts.find(
-        (p) => p.id === product.id
-    );
-
-    if (exist) {
-      setOrderProducts(
-          orderProducts.map((p) =>
-              p.id === product.id
-                  ? { ...p, quantity: p.quantity + 1 }
-                  : p
-          )
-      );
-    } else {
-      setOrderProducts([
-        ...orderProducts,
-        {
-          id: product.id,
-          name: product.name,
-          price: product.price,
-          quantity: 1
-        }
-      ]);
-    }
-  };
-
-  const removeProduct = (id) => {
-    setOrderProducts(
-        orderProducts.filter(
-            (product) => product.id !== id
-        )
-    );
-  };
-
-  const changeQuantity = (id, quantity) => {
-    setOrderProducts(
-        orderProducts.map((product) =>
-            product.id === id
-                ? {
-                  ...product,
-                  quantity: Number(quantity)
-                }
-                : product
-        )
-    );
   };
 
   const onSubmit = async (data) => {
-    const order = {
-      clientId: data.clientId,
-      status: data.status,
-      products: orderProducts.map((product) => ({
-        productId: product.id,
-        quantity: product.quantity
-      }))
-    };
-
     try {
       if (id) {
-        await api.put(`/orders/${id}`, order);
+        await api.put(`/clients/${id}`, data);
+        toast.success("Client modifié avec succès.");
       } else {
-        await api.post("/orders", order);
+        await api.post("/clients", data);
+        toast.success("Client ajouté avec succès.");
       }
-
-      navigate("/orders");
+      navigate("/clients");
     } catch (error) {
       console.error(error);
+      toast.error("Erreur lors de l'enregistrement.");
     }
   };
 
   return (
       <>
-        <Navbar />
-        <div style={{ display: "flex" }}>
-          <Sidebar />
+        <Sidebar />
+        <div className="page-container">
+          <h1>
+            {id ? "Modifier" : "Ajouter"} un Client
+          </h1>
 
-          <div className="page-container">
-            <h1>
-              {id ? "Modifier" : "Créer"} une Commande
-            </h1>
+          <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="form"
+          >
+            <div className="form-group">
+              <label>Nom</label>
+              <input
+                  type="text"
+                  {...register("nom")}
+              />
+              {errors.nom && (
+                  <span className="error">
+                                {errors.nom.message}
+                            </span>
+              )}
+            </div>
 
-            <form
-                onSubmit={handleSubmit(onSubmit)}
-                className="form"
+            <div className="form-group">
+              <label>Prénom</label>
+              <input
+                  type="text"
+                  {...register("prenom")}
+              />
+              {errors.prenom && (
+                  <span className="error">
+                                {errors.prenom.message}
+                            </span>
+              )}
+            </div>
+
+            <div className="form-group">
+              <label>Email</label>
+              <input
+                  type="email"
+                  {...register("email")}
+              />
+              {errors.email && (
+                  <span className="error">
+                                {errors.email.message}
+                            </span>
+              )}
+            </div>
+
+            <div className="form-group">
+              <label>Téléphone</label>
+              <input
+                  type="text"
+                  {...register("telephone")}
+              />
+              {errors.telephone && (
+                  <span className="error">
+                                {errors.telephone.message}
+                            </span>
+              )}
+            </div>
+
+            <div className="form-group">
+              <label>Adresse</label>
+              <textarea
+                  {...register("adresse")}
+              />
+              {errors.adresse && (
+                  <span className="error">
+                                {errors.adresse.message}
+                            </span>
+              )}
+            </div>
+
+            <button
+                type="submit"
+                className="btn-primary"
             >
-              <div className="form-group">
-                <label>Client</label>
-                <select {...register("clientId")}>
-                  <option value="">
-                    Choisir un client
-                  </option>
-
-                  {clients.map((client) => (
-                      <option
-                          key={client.id}
-                          value={client.id}
-                      >
-                        {client.nom} {client.prenom}
-                      </option>
-                  ))}
-                </select>
-
-                {errors.clientId && (
-                    <span className="error">
-                  {errors.clientId.message}
-                </span>
-                )}
-              </div>
-
-              <div className="form-group">
-                <label>Statut</label>
-
-                <select {...register("status")}>
-                  <option value="EN_ATTENTE">
-                    EN_ATTENTE
-                  </option>
-                  <option value="EXPEDIEE">
-                    EXPEDIEE
-                  </option>
-                  <option value="LIVREE">
-                    LIVREE
-                  </option>
-                </select>
-
-                {errors.status && (
-                    <span className="error">
-                  {errors.status.message}
-                </span>
-                )}
-              </div>
-
-              <div className="form-group">
-                <label>Ajouter un produit</label>
-
-                <select
-                    onChange={(e) =>
-                        addProduct(e.target.value)
-                    }
-                >
-                  <option value="">
-                    Choisir un produit
-                  </option>
-
-                  {products.map((product) => (
-                      <option
-                          key={product.id}
-                          value={product.id}
-                      >
-                        {product.name}
-                      </option>
-                  ))}
-                </select>
-              </div>
-
-              <table>
-                <thead>
-                <tr>
-                  <th>Produit</th>
-                  <th>Prix</th>
-                  <th>Quantité</th>
-                  <th>Action</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                {orderProducts.map((product) => (
-                    <tr key={product.id}>
-                      <td>
-                        {product.name}
-                      </td>
-
-                      <td>
-                        {product.price} DH
-                      </td>
-
-                      <td>
-                        <input
-                            type="number"
-                            min="1"
-                            value={product.quantity}
-                            onChange={(e) =>
-                                changeQuantity(
-                                    product.id,
-                                    e.target.value
-                                )
-                            }
-                        />
-                      </td>
-
-                      <td>
-                        <button
-                            type="button"
-                            className="btn-danger"
-                            onClick={() =>
-                                removeProduct(product.id)
-                            }
-                        >
-                          Supprimer
-                        </button>
-                      </td>
-                    </tr>
-                ))}
-                </tbody>
-              </table>
-
-              <button
-                  type="submit"
-                  className="btn-primary"
-              >
-                Enregistrer
-              </button>
-            </form>
-          </div>
+              Enregistrer
+            </button>
+          </form>
         </div>
       </>
   );
 }
 
-export default OrderForm;
+export default ClientForm;
