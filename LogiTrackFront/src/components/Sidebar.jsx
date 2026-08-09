@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import "./Sidebar.css";
+import logo from "../assets/logox.png";
 
 function Sidebar() {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ function Sidebar() {
       <aside className="sidebar">
         <div className="sidebar-content">
           <div className="sidebar-header">
-            <h2>LogiTrack</h2>
+            <img src={logo} alt="Logo" className="logo" />
           </div>
 
           <nav className="sidebar-nav">

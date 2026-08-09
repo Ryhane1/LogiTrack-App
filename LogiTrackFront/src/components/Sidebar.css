@@ -7,11 +7,18 @@
     flex-direction: column;
 }
 
+.sidebar-header img{
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
 .sidebar-content {
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 20px;
+    align-items: center;
 }
 
 .sidebar-header {

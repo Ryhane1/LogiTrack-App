@@ -10,11 +10,10 @@ import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
 
 const schema = yup.object({
-  name: yup.string().required("Le nom est obligatoire"),
-  description: yup.string().required("La description est obligatoire"),
-  category: yup.string().required("La catégorie est obligatoire"),
-  price: yup.number().typeError("Prix invalide").positive().required("Le prix est obligatoire"),
-  stock: yup.number().typeError("Stock invalide").integer().min(0).required("Le stock est obligatoire"),
+  nom: yup.string().required("Le nom est obligatoire"),
+  categorie: yup.string().required("La catégorie est obligatoire"),
+  prix: yup.number().typeError("Prix invalide").positive().required("Le prix est obligatoire"),
+  quantiteStock: yup.number().typeError("Stock invalide").integer().min(0).required("Le stock est obligatoire"),
 });
 
 function ProductForm() {
@@ -65,32 +64,26 @@ function ProductForm() {
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group">
             <label>Nom</label>
-            <input {...register("name")} />
-            <span className="error">{errors.name?.message}</span>
-          </div>
-
-          <div className="form-group">
-            <label>Description</label>
-            <textarea rows="4" {...register("description")} />
-            <span className="error">{errors.description?.message}</span>
+            <input {...register("nom")} />
+            <span className="error">{errors.nom?.message}</span>
           </div>
 
           <div className="form-group">
             <label>Catégorie</label>
-            <input {...register("category")} />
-            <span className="error">{errors.category?.message}</span>
+            <input {...register("categorie")} />
+            <span className="error">{errors.categorie?.message}</span>
           </div>
 
           <div className="form-group">
             <label>Prix</label>
-            <input type="number" step="0.01" {...register("price")} />
-            <span className="error">{errors.price?.message}</span>
+            <input type="number" step="0.01" {...register("prix")} />
+            <span className="error">{errors.prix?.message}</span>
           </div>
 
           <div className="form-group">
             <label>Stock</label>
-            <input type="number" {...register("stock")} />
-            <span className="error">{errors.stock?.message}</span>
+            <input type="number" {...register("quantiteStock")} />
+            <span className="error">{errors.quantiteStock?.message}</span>
           </div>
 
           <button type="submit" className="btn-primary">

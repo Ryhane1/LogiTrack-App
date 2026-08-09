@@ -153,12 +153,12 @@ function Dashboard() {
                                 <div className="card-icon">
                                     {card.icon}
                                 </div>
-                                <h3>
+                                <h4>
                                     {card.title}
-                                </h3>
-                                <h1>
+                                </h4>
+                                <h2>
                                     {card.number}
-                                </h1>
+                                </h2>
                             </Link>
                         ))}
                     </div>
@@ -200,13 +200,13 @@ function Dashboard() {
                             </table>
 
                             <h2>
-                                Produit le plus commandé
+                                Produit le plus commandé :
                             </h2>
 
                             {topProduct ? (
-                                <h2>
-                                    {topProduct.nom}
-                                </h2>
+                                <h3>
+                                   - {topProduct.nom}
+                                </h3>
                             ) : (
                                 <p>
                                     Aucun produit trouvé

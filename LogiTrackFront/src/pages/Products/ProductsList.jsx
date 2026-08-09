@@ -5,6 +5,7 @@ import "./Products.css";
 import { toast } from "react-toastify";
 import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
+import Pagination from "../../components/Pagination.jsx";
 
 function ProductsList() {
     const [products, setProducts] = useState([]);
@@ -12,31 +13,75 @@ function ProductsList() {
     const [maxPrice, setMaxPrice] = useState("");
     const [lowStock, setLowStock] = useState(false);
     const role = localStorage.getItem("role");
+    const[page,setPage]=useState(1);
+    const[totalPages,setTotalPages]=useState(0);
+
 
     useEffect(() => {
         loadProducts();
-    }, []);
+    }, [page]);
 
     const loadProducts = async () => {
         try {
-            const response = await api.get("/products");
-            console.log(response.data.content);
-            setProducts(response.data.content ? response.data.content : response.data);
+            const response = await api.get(
+                `/products?page=${page - 1}&size=10`
+            );
+
+            setProducts(response.data.content);
+            setTotalPages(response.data.totalPages);
+
         } catch (error) {
             console.error(error);
             toast.error("Erreur chargement des produits");
         }
     };
 
-    const categories = [...new Set(products.map(product => product.category))];
+    const handlePageChange = (newPage) => {
+        setPage(newPage);
+    };
+
+    const categories = [
+        ...new Set(products.map(product => product.categorie))
+    ];
 
     const filteredProducts = products.filter(product => {
-        if (categoryFilter && product.category !== categoryFilter) return false;
-        if (maxPrice && product.price > Number(maxPrice)) return false;
-        if (lowStock && product.stock > 10) return false;
+        if (
+            categoryFilter &&
+            product.categorie !== categoryFilter
+        ) {
+            return false;
+        }
+
+        if (
+            maxPrice &&
+            product.prix > Number(maxPrice)
+        ) {
+            return false;
+        }
+
+        if (
+            lowStock &&
+            product.quantiteStock > 10
+        ) {
+            return false;
+        }
 
         return true;
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     const handleDelete = async (id) => {
         if (role === "AGENT") {
@@ -167,6 +212,11 @@ function ProductsList() {
                 )}
                 </tbody>
             </table>
+            <Pagination
+                page={page}
+                totalPages={totalPages}
+                onPageChange={handlePageChange}
+            />
         </div>
         </div>
 

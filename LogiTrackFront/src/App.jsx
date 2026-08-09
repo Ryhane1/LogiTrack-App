@@ -34,6 +34,8 @@ import ProductsList from "./pages/products/ProductsList";
 import ClientsList from "./pages/clients/ClientsList";
 import OrdersList from "./pages/orders/OrdersList";
 import UserDetails from "./pages/users/UserDetails";
+import Layout from "./Layout.jsx";
+import AuthRedirect from "./guards/AuthRedirect.jsx";
 
 function App() {
   return (
@@ -41,13 +43,24 @@ function App() {
         <Routes>
 
           <Route path="/" element={<Login />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+                <Route path="/login" element={
+                    <AuthRedirect>
+                        <Login />
+                    </AuthRedirect>
+
+                } />
+                <Route path="/register" element={
+                    <AuthRedirect>
+                        <Register />
+                    </AuthRedirect>
+                } />
+
           <Route path="/access-denied" element={<AccessDenied />} />
 
 
           <Route element={<AuthGuard />}>
-                <Route
+              <Route element={<Layout />}>
+              <Route
                     element={<RoleGuard roles={["ADMIN", "MANAGER", "AGENT"]} /> } >
 
                       <Route path="clients" element={<ClientsList />} />
@@ -87,8 +100,9 @@ function App() {
 
                 </Route>
           </Route>
+          </Route>
 
-          <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<NotFound />} />
 
         </Routes>
       <ToastContainer
