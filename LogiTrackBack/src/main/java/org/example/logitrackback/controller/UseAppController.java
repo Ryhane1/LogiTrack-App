@@ -58,4 +58,9 @@ public class UseAppController {
         return ResponseEntity.ok().body(userAppService.consulterUserByUsername(nom));
     }
 
+    @PutMapping("/bannir/{id}")
+    public ResponseEntity<Void> bannirUser(@PathVariable Long id){
+        return ResponseEntity.ok().body(userAppService.bannirUser(id));
+    }
+
 }

@@ -12,6 +12,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class UserAppService {
@@ -57,6 +59,13 @@ public class UserAppService {
     @Cacheable(value = "userByUsername", key = "#username")
     public UserAppDTO consulterUserByUsername(String username){
         return userAppMapper.toDTO(userAppRepository.findUserAppByNom(username));
+    }
+
+    public void bannirUser(Long id){
+        UserApp user = userAppRepository.findById(id).orElseThrow(
+                () -> new RuntimeException("User not Found")
+        );
+        user.setActive(false);
     }
 
 }

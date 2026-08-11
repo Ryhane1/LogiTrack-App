@@ -31,6 +31,7 @@ public class UserApp implements UserDetails {
     @Enumerated(EnumType.STRING)
     @Column(length = 10)
     private RoleUser role;
+    private boolean active;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
