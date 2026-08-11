@@ -1,4 +1,4 @@
-# 🚚 LogiTrack — Part 2
+# 🚚 LogiTrack 
 
 > **Plateforme de gestion logistique sécurisée avec Spring Boot, Spring Security, JWT et React**
 
