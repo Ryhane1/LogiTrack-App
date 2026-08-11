@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7720fd33-9a70-4548-b713-093eb9dfaae7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/NotFound.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogiTrackBack" beforeDir="false" afterPath="$PROJECT_DIR$/../LogiTrackBack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/@mui_material_Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/@mui_material_Pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/@mui_material_Pagination.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/@mui_material_Pagination.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@rolldown/.binding-win32-x64-msvc-ZBiBFTCz/rolldown-binding.win32-x64-msvc.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@rolldown/.binding-win32-x64-msvc-ZBiBFTCz/rolldown-binding.win32-x64-msvc.node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormInput.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Lyout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AccessDenied.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AccessDenied.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Clients/ClientDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/ClientDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Clients/ClientForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/ClientForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Clients/Clients.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/Clients.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Clients/ClientsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/ClientsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NotFound.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFound.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Orders/OrderForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrderForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Orders/Orders.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/Orders.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Orders/OrdersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrdersList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Products/Products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/Products.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Products/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/ProductsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Users/Users.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/Users.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Users/UsersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/UsersList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/AuthService.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/SessionService.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AccessDenied.css" afterDir="false" />
-    </list>
+    <list default="true" id="7720fd33-9a70-4548-b713-093eb9dfaae7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,23 +36,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0002140150686807" />
-      <entry key="S2" value="1.120951452517793" />
-      <entry key="S5" value="1.4295803774735925" />
-      <entry key="S10" value="1.6554238151559586" />
-      <entry key="S30" value="1.8686418299475465" />
-      <entry key="S60" value="1.932017233767308" />
-      <entry key="M2" value="1.9692643074522898" />
-      <entry key="M5" value="2.1495281460661917" />
-      <entry key="M10" value="2.5644882738119166" />
-      <entry key="M15" value="2.8628709161241095" />
-      <entry key="M30" value="3.314799676603668" />
-      <entry key="H1" value="3.6226444320934728" />
-      <entry key="H2" value="4.026414165503611" />
-      <entry key="H4" value="7.808277139630024" />
-      <entry key="D1" value="77.75016145858527" />
-      <entry key="W1" value="172.94524100431678" />
+      <entry key="MS100" value="1.0000013866162465" />
+      <entry key="MS500" value="1.0673727372610453" />
+      <entry key="S2" value="1.5710637834025538" />
+      <entry key="S5" value="2.091560229759854" />
+      <entry key="S10" value="2.4465343850732855" />
+      <entry key="S30" value="2.786484506195344" />
+      <entry key="S60" value="2.8890679935957824" />
+      <entry key="M2" value="2.94725266269302" />
+      <entry key="M5" value="3.139885100839814" />
+      <entry key="M10" value="3.5587295044514433" />
+      <entry key="M15" value="3.8585834357222577" />
+      <entry key="M30" value="4.3123165985790735" />
+      <entry key="H1" value="4.621287337418131" />
+      <entry key="H2" value="5.025659918548469" />
+      <entry key="H4" value="8.80754576366529" />
+      <entry key="D1" value="78.74894764368611" />
+      <entry key="W1" value="173.94485529098856" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -95,36 +61,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="8.008100762088905E-285" />
-      <entry key="M2" value="1.152764447682988E-142" />
-      <entry key="M5" value="2.475140236665019E-57" />
-      <entry key="M10" value="7.007507189758772E-29" />
-      <entry key="M15" value="2.1573640675013816E-19" />
-      <entry key="M30" value="7.293072563386498E-10" />
-      <entry key="H1" value="5.122059729671815E-5" />
-      <entry key="H2" value="0.015235111556575111" />
-      <entry key="H4" value="0.28716491464694116" />
-      <entry key="D1" value="13.663333607741487" />
-      <entry key="W1" value="38.42954266749145" />
+      <entry key="S60" value="7.83007862184222E-285" />
+      <entry key="M2" value="1.1398793101128356E-142" />
+      <entry key="M5" value="2.4640364559178497E-57" />
+      <entry key="M10" value="6.991771255962632E-29" />
+      <entry key="M15" value="2.1541331652252865E-19" />
+      <entry key="M30" value="7.28760940724414E-10" />
+      <entry key="H1" value="5.120140932473741E-5" />
+      <entry key="H2" value="0.015232257643383262" />
+      <entry key="H4" value="0.28713801684186435" />
+      <entry key="D1" value="13.663120299401104" />
+      <entry key="W1" value="38.42945695951406" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.1476240826786913" />
-      <entry key="MS500" value="0.6822133640030134" />
-      <entry key="S2" value="1.0174461864597728" />
-      <entry key="S5" value="1.3740282324430504" />
-      <entry key="S10" value="1.6225860242057764" />
-      <entry key="S30" value="1.8561056554569513" />
-      <entry key="S60" value="1.9255127583416687" />
-      <entry key="M2" value="1.965948326350531" />
-      <entry key="M5" value="2.148161546944699" />
-      <entry key="M10" value="2.5637701023450568" />
-      <entry key="M15" value="2.8623758269092616" />
-      <entry key="M30" value="3.3145398484116697" />
-      <entry key="H1" value="3.6225614842457334" />
-      <entry key="H2" value="4.04156928183492" />
-      <entry key="H4" value="8.095304355359639" />
-      <entry key="D1" value="91.41280873348349" />
-      <entry key="W1" value="211.37451225234045" />
+      <entry key="MS100" value="1.591314197950124E-6" />
+      <entry key="MS500" value="0.1133110687138413" />
+      <entry key="S2" value="1.0277790795159207" />
+      <entry key="S5" value="1.8126961195714826" />
+      <entry key="S10" value="2.291655361662712" />
+      <entry key="S30" value="2.7305331710753618" />
+      <entry key="S60" value="2.860477857054648" />
+      <entry key="M2" value="2.932796148307737" />
+      <entry key="M5" value="3.1340385105784674" />
+      <entry key="M10" value="3.5557673634428237" />
+      <entry key="M15" value="3.8565914722709884" />
+      <entry key="M30" value="4.31130787660974" />
+      <entry key="H1" value="4.620829806270072" />
+      <entry key="H2" value="5.040624871219506" />
+      <entry key="H4" value="9.094452427734826" />
+      <entry key="D1" value="92.41136600922403" />
+      <entry key="W1" value="212.37403860137744" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
