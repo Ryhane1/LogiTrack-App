@@ -19,46 +19,31 @@ function Register() {
     const [error, setError] = useState("");
 
     const handleChange = (e) => {
-
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
         });
-
     };
 
-
     const handleSubmit = async (e) => {
-
         e.preventDefault();
-
         try {
-
             await api.post(
                 "/auth/register",
                 formData
             );
-
             setMessage(
                 "Compte créé avec succès !"
             );
-
             setTimeout(() => {
-
                 navigate("/");
-
             }, 2000);
-
         } catch (error) {
-
             setError(
                 "Erreur lors de la création du compte."
             );
-
             console.error(error);
-
         }
-
     };
 
     return (
@@ -112,12 +97,12 @@ function Register() {
                         Admin
                     </option>
                     
-                    <option value="PATIENT">
-                        Patient
+                    <option value="MANAGER">
+                        Manager
                     </option>
 
-                    <option value="MEDECIN">
-                        Médecin
+                    <option value="AGENT">
+                        Agent
                     </option>
                 </select>
 

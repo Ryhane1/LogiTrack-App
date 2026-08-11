@@ -5,26 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7720fd33-9a70-4548-b713-093eb9dfaae7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/NotFound.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LogiTrackBack" beforeDir="false" afterPath="$PROJECT_DIR$/../LogiTrackBack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/@mui_material_Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/@mui_material_Pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/@mui_material_Pagination.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/@mui_material_Pagination.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@rolldown/.binding-win32-x64-msvc-ZBiBFTCz/rolldown-binding.win32-x64-msvc.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@rolldown/.binding-win32-x64-msvc-ZBiBFTCz/rolldown-binding.win32-x64-msvc.node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormInput.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Lyout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AccessDenied.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AccessDenied.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Clients/ClientDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/ClientDetails.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Clients/ClientForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/ClientForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Clients/Clients.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/Clients.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Clients/ClientsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Clients/ClientsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Orders/OrderDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrderDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NotFound.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFound.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Orders/OrderForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrderForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Orders/Orders.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/Orders.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Orders/OrdersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Orders/OrdersList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Products/ProductDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/ProductDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Products/Products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/Products.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Products/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/ProductsList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Users/UserDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/UserDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Users/UserForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/UserForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users/Users.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/Users.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users/UsersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/UsersList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AuthService.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/SessionService.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AccessDenied.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,22 +71,22 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000146327" />
-      <entry key="S2" value="1.001955834483811" />
-      <entry key="S5" value="1.0825149877642848" />
-      <entry key="S10" value="1.2872542214907987" />
-      <entry key="S30" value="1.6598149324166793" />
-      <entry key="S60" value="1.8122899312540315" />
-      <entry key="M2" value="1.9012712880526683" />
-      <entry key="M5" value="1.9597645063170996" />
-      <entry key="M10" value="2.010862678018586" />
-      <entry key="M15" value="2.11473573482904" />
-      <entry key="M30" value="2.653782137865875" />
-      <entry key="H1" value="4.642328069285126" />
-      <entry key="H2" value="11.832494903579917" />
-      <entry key="H4" value="30.40394030790148" />
-      <entry key="D1" value="97.71761608945016" />
-      <entry key="W1" value="123.87416204900178" />
+      <entry key="MS500" value="1.0002140150686807" />
+      <entry key="S2" value="1.120951452517793" />
+      <entry key="S5" value="1.4295803774735925" />
+      <entry key="S10" value="1.6554238151559586" />
+      <entry key="S30" value="1.8686418299475465" />
+      <entry key="S60" value="1.932017233767308" />
+      <entry key="M2" value="1.9692643074522898" />
+      <entry key="M5" value="2.1495281460661917" />
+      <entry key="M10" value="2.5644882738119166" />
+      <entry key="M15" value="2.8628709161241095" />
+      <entry key="M30" value="3.314799676603668" />
+      <entry key="H1" value="3.6226444320934728" />
+      <entry key="H2" value="4.026414165503611" />
+      <entry key="H4" value="7.808277139630024" />
+      <entry key="D1" value="77.75016145858527" />
+      <entry key="W1" value="172.94524100431678" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -81,37 +94,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.0312621009449118E-222" />
-      <entry key="S60" value="2.0479545877310045E-111" />
-      <entry key="M2" value="1.0883431542548538E-55" />
-      <entry key="M5" value="3.4009205695403108E-22" />
-      <entry key="M10" value="5.253776119537849E-11" />
-      <entry key="M15" value="2.9409565495278896E-7" />
-      <entry key="M30" value="0.00194978679634366" />
-      <entry key="H1" value="0.20038011749596613" />
-      <entry key="H2" value="2.3453833262380304" />
-      <entry key="H4" value="8.727139848472136" />
-      <entry key="D1" value="28.689599839506926" />
-      <entry key="W1" value="35.66485159163023" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="8.008100762088905E-285" />
+      <entry key="M2" value="1.152764447682988E-142" />
+      <entry key="M5" value="2.475140236665019E-57" />
+      <entry key="M10" value="7.007507189758772E-29" />
+      <entry key="M15" value="2.1573640675013816E-19" />
+      <entry key="M30" value="7.293072563386498E-10" />
+      <entry key="H1" value="5.122059729671815E-5" />
+      <entry key="H2" value="0.015235111556575111" />
+      <entry key="H4" value="0.28716491464694116" />
+      <entry key="D1" value="13.663333607741487" />
+      <entry key="W1" value="38.42954266749145" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.1262205717133875E-12" />
-      <entry key="MS500" value="0.005896195190712089" />
-      <entry key="S2" value="0.278146056017497" />
-      <entry key="S5" value="0.6626318107807629" />
-      <entry key="S10" value="1.0268831652565888" />
-      <entry key="S30" value="1.5506886186363658" />
-      <entry key="S60" value="1.7535403847786273" />
-      <entry key="M2" value="1.8706993115208645" />
-      <entry key="M5" value="1.9472225344495546" />
-      <entry key="M10" value="2.0044128830231087" />
-      <entry key="M15" value="2.110169325855299" />
-      <entry key="M30" value="2.6529176159333843" />
-      <entry key="H1" value="4.840699702760261" />
-      <entry key="H2" value="14.17556867476558" />
-      <entry key="H4" value="39.12813775497037" />
-      <entry key="D1" value="126.40574303922314" />
-      <entry key="W1" value="159.53875172952425" />
+      <entry key="MS100" value="0.1476240826786913" />
+      <entry key="MS500" value="0.6822133640030134" />
+      <entry key="S2" value="1.0174461864597728" />
+      <entry key="S5" value="1.3740282324430504" />
+      <entry key="S10" value="1.6225860242057764" />
+      <entry key="S30" value="1.8561056554569513" />
+      <entry key="S60" value="1.9255127583416687" />
+      <entry key="M2" value="1.965948326350531" />
+      <entry key="M5" value="2.148161546944699" />
+      <entry key="M10" value="2.5637701023450568" />
+      <entry key="M15" value="2.8623758269092616" />
+      <entry key="M30" value="3.3145398484116697" />
+      <entry key="H1" value="3.6225614842457334" />
+      <entry key="H2" value="4.04156928183492" />
+      <entry key="H4" value="8.095304355359639" />
+      <entry key="D1" value="91.41280873348349" />
+      <entry key="W1" value="211.37451225234045" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -136,6 +149,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/enaaj/OneDrive/Desktop/Sprint5/LogiTrack/LogiTrackFront&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -145,6 +159,11 @@
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\enaaj\OneDrive\Desktop\Sprint5\LogiTrack\LogiTrackFront" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

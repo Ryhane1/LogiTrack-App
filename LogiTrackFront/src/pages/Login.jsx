@@ -40,7 +40,6 @@ function Login() {
 
             console.log(decoded);
 
-            localStorage.setItem("id",decoded.sub)
             localStorage.setItem("nom", decoded.sub);
 
             localStorage.setItem(

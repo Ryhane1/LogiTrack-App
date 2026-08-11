@@ -21,37 +21,36 @@ function Sidebar() {
           </div>
 
           <nav className="sidebar-nav">
-            {(role === "ADMIN" || role === "MANAGER") && (
-                <NavLink to="/dashboard" className="sidebar-link">
-                  📊 Dashboard
-                </NavLink>
-            )}
+
+            <NavLink to="/dashboard" className="sidebar-link">
+               Dashboard
+            </NavLink>
 
             <NavLink to="/clients" className="sidebar-link">
-              👥 Clients
+               Clients
             </NavLink>
 
             <NavLink to="/products" className="sidebar-link">
-              📦 Produits
+               Produits
             </NavLink>
 
             <NavLink to="/orders" className="sidebar-link">
-              🚚 Commandes
+               Commandes
             </NavLink>
 
             <NavLink to="/profile" className="sidebar-link">
-              👤 Mon profil
+               Mon profil
             </NavLink>
 
             {role === "ADMIN" && (
                 <NavLink to="/users" className="sidebar-link">
-                  👨‍💼 Utilisateurs
+                   Utilisateurs
                 </NavLink>
             )}
           </nav>
 
           <button className="logout-btn" onClick={handleLogout}>
-            🚪 Déconnexion
+             Déconnexion
           </button>
         </div>
       </aside>

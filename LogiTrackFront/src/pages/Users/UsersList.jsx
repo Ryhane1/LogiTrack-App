@@ -13,7 +13,6 @@ function UsersList() {
         loadData();
     }, []);
 
-
     const loadData = async () => {
 
         try {
@@ -30,32 +29,6 @@ function UsersList() {
 
     };
 
-
-    const handleDelete = async (id) => {
-
-        if (window.confirm("Supprimer ce User ?")) {
-
-            try {
-
-                await api.delete(`/users/${id}`);
-
-                loadData();
-
-                toast.success("User supprimé avec succès.")
-
-
-            } catch (error) {
-
-                toast.error("Erreur lors de la suppression.");
-                console.log(error);
-
-            }
-
-        }
-
-    };
-
-
     return (
         <>
         <Sidebar/>
@@ -67,7 +40,7 @@ function UsersList() {
                 <h1>Liste des Users</h1>
 
                 <Link
-                    to="/users/add"
+                    to="/profile"
                     className="btn-add"
                 >
                     + Ajouter
@@ -79,20 +52,19 @@ function UsersList() {
             <table>
 
                 <thead>
-                    <tr>
+                    <tr className="table-header">
                         <th>ID</th>
                         <th>Nom</th>
                         <th>Prenom</th>
                         <th>Email</th>
                         <th>Role</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
 
 
                 <tbody>
 
-                    {Array.isArray(rdvs) &&
+                    {Array.isArray(users) &&
                     users.length > 0 ? (
 
                         users.map((r) => (
@@ -115,37 +87,6 @@ function UsersList() {
 
                                 <td>
                                     {r.role}
-                                </td>
-
-                                <td>
-
-                                    <Link
-                                        to={`/users/${r.id}`}
-                                        className="btn-info"
-                                    >
-                                        Voir
-                                    </Link>
-
-                                    {" "}
-
-                                    <Link
-                                        to={`/users/edit/${r.id}`}
-                                        className="btn-warning"
-                                    >
-                                        Modifier
-                                    </Link>
-
-                                    {" "}
-
-                                    <button
-                                        className="btn-danger"
-                                        onClick={() =>
-                                            handleDelete(r.id)
-                                        }
-                                    >
-                                        Supprimer
-                                    </button>
-
                                 </td>
 
                             </tr>

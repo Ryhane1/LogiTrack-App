@@ -44,23 +44,21 @@ function ClientsList() {
                 <div className="header">
                     <h1>Liste des Clients</h1>
 
-                    <Link
-                        to="/clients/add"
-                        className="btn-add"
-                    >
-                        + Ajouter
-                    </Link>
+                    {role !== "AGENT" && (
+                        <Link to="/clients/add" className="btn-add" >
+                            + Ajouter Client
+                        </Link>
+                    )}
                 </div>
 
                 <table>
                     <thead>
-                    <tr>
+                    <tr className="table-header">
                         <th>ID</th>
                         <th>Nom</th>
-                        <th>Prénom</th>
                         <th>Email</th>
                         <th>Téléphone</th>
-                        <th>Adresse</th>
+                        <th>Ville</th>
                         <th>Actions</th>
                     </tr>
                     </thead>
@@ -71,10 +69,9 @@ function ClientsList() {
                             <tr key={client.id}>
                                 <td>{client.id}</td>
                                 <td>{client.nom}</td>
-                                <td>{client.prenom}</td>
                                 <td>{client.email}</td>
                                 <td>{client.telephone}</td>
-                                <td>{client.adresse}</td>
+                                <td>{client.ville}</td>
 
                                 <td>
                                     <Link

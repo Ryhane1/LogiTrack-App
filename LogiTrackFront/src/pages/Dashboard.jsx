@@ -4,6 +4,13 @@ import api from "../api/axios.jsx";
 import "./Dashboard.css";
 import Navbar from "../components/Navbar.jsx";
 import Sidebar from "../components/Sidebar.jsx";
+import PeopleIcon from "@mui/icons-material/People";
+import Inventory2Icon from "@mui/icons-material/Inventory2";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+
 
 function Dashboard() {
     const role = localStorage.getItem("role");
@@ -93,43 +100,44 @@ function Dashboard() {
         }
     };
     const cards = [
-        {
-            title: "Clients",
-            number: stats.clients,
-            icon: "👥",
-            link: "/clients"
-        },
-        {
-            title: "Produits",
-            number: stats.products,
-            icon: "📦",
-            link: "/products"
-        },
-        {
-            title: "Commandes",
-            number: stats.orders,
-            icon: "🛒",
-            link: "/orders"
-        },
-        {
-            title: "En attente",
-            number: stats.pending,
-            icon: "⏳",
-            link: "/orders"
-        },
-        {
-            title: "Expédiées",
-            number: stats.shipped,
-            icon: "🚚",
-            link: "/orders"
-        },
-        {
-            title: "Livrées",
-            number: stats.delivered,
-            icon: "✅",
-            link: "/orders"
-        }
-    ];
+            {
+                title: "Clients",
+                number: stats.clients,
+                icon: <PeopleIcon />,
+                link: "/clients"
+            },
+            {
+                title: "Produits",
+                number: stats.products,
+                icon: <Inventory2Icon />,
+                link: "/products"
+            },
+            {
+                title: "Commandes",
+                number: stats.orders,
+                icon: <ShoppingCartIcon />,
+                link: "/orders"
+            },
+            {
+                title: "En attente",
+                number: stats.pending,
+                icon: <HourglassEmptyIcon />,
+                link: "/orders"
+            },
+            {
+                title: "Expédiées",
+                number: stats.shipped,
+                icon: <LocalShippingIcon />,
+                link: "/orders"
+            },
+            {
+                title: "Livrées",
+                number: stats.delivered,
+                icon: <CheckCircleIcon />,
+                link: "/orders"
+            }
+        ];
+
 
     return (
         <>

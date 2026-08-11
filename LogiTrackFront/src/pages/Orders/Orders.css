@@ -15,7 +15,12 @@
   background-color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
+.table-header th {
+    background: #007bff;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+}
 .data-table th,
 .data-table td {
   padding: 12px;

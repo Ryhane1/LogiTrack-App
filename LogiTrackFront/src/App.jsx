@@ -9,32 +9,28 @@ import Register from "./pages/Register";
 
 import Dashboard from "./pages/Dashboard";
 
-import Clients from "./pages/clients/ClientsList";
-import ClientDetails from "./pages/clients/ClientDetails";
-import ClientForm from "./pages/clients/ClientForm";
+import ClientDetails from "./pages/Clients/ClientDetails";
+import ClientForm from "./pages/Clients/ClientForm";
 
-import Products from "./pages/products/ProductsList";
-import ProductDetails from "./pages/products/ProductDetails";
-import ProductForm from "./pages/products/ProductForm";
+import ProductDetails from "./pages/Products/ProductDetails";
+import ProductForm from "./pages/Products/ProductForm";
 
-import Orders from "./pages/orders/OrdersList";
-import OrderDetails from "./pages/orders/OrderDetails";
-import OrderForm from "./pages/orders/OrderForm";
+import OrderDetails from "./pages/Orders/OrderDetails";
+import OrderForm from "./pages/Orders/OrderForm";
 
-import Users from "./pages/users/UsersList";
+import Users from "./pages/Users/UsersList";
 
-import Profile from "./pages/users/UserDetails";
 import AccessDenied from "./pages/AccessDenied";
 import NotFound from "./pages/NotFound";
 
 import AuthGuard from "./guards/AuthGuard";
 import RoleGuard from "./guards/RoleGuard";
 import UserForm from "./pages/Users/UserForm.jsx";
-import ProductsList from "./pages/products/ProductsList";
-import ClientsList from "./pages/clients/ClientsList";
-import OrdersList from "./pages/orders/OrdersList";
-import UserDetails from "./pages/users/UserDetails";
-import Layout from "./Layout.jsx";
+import ProductsList from "./pages/Products/ProductsList";
+import ClientsList from "./pages/Clients/ClientsList";
+import OrdersList from "./pages/Orders/OrdersList";
+import UserDetails from "./pages/Users/UserDetails";
+import Layout from "./components/Layout.jsx";
 import AuthRedirect from "./guards/AuthRedirect.jsx";
 
 function App() {
@@ -63,6 +59,8 @@ function App() {
               <Route
                     element={<RoleGuard roles={["ADMIN", "MANAGER", "AGENT"]} /> } >
 
+                      <Route path="dashboard" element={<Dashboard />} />
+
                       <Route path="clients" element={<ClientsList />} />
                       <Route path="clients/:id" element={<ClientDetails />} />
 
@@ -81,7 +79,7 @@ function App() {
 
                       <Route path="dashboard" element={<Dashboard />} />
 
-                      <Route path="clients/new" element={<ClientForm />} />
+                      <Route path="clients/add" element={<ClientForm />} />
                       <Route path="clients/edit/:id" element={<ClientForm />} />
 
                       <Route path="products/new" element={<ProductForm />} />

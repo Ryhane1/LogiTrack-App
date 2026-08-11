@@ -114,26 +114,26 @@ function OrderForm() {
             const orderId = orderResponse.data.id;
             for (const product of orderProducts) {
                 await api.post(`/orders/${orderId}/products`, {
-produitId: product.produitId,
-    quantite: product.quantite
-});
-}
-if (data.statut !== "EN_ATTENTE") {
-  await api.put(`/orders/${orderId}/status`, {
-    statut: data.statut
-  });
-}
-toast.success("Commande créée avec succès.");
-navigate("/orders");
-} catch (error) {
-  console.error("Erreur création commande :", error.response?.data || error);
-  toast.error(
-      error.response?.data?.message ||
-      "Erreur lors de la création de la commande."
-  );
-}
-};
-return (
+            produitId: product.produitId,
+                quantite: product.quantite
+            });
+            }
+            if (data.statut !== "EN_ATTENTE") {
+              await api.put(`/orders/${orderId}/status`, {
+                statut: data.statut
+              });
+            }
+            toast.success("Commande créée avec succès.");
+            navigate("/orders");
+            } catch (error) {
+              console.error("Erreur création commande :", error.response?.data || error);
+              toast.error(
+                  error.response?.data?.message ||
+                  "Erreur lors de la création de la commande."
+              );
+        }
+    };
+    return (
     <div className="page-container">
       <h1>Nouvelle commande</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="form">

@@ -70,19 +70,6 @@ function ProductsList() {
     });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     const handleDelete = async (id) => {
         if (role === "AGENT") {
             toast.error("Vous n'avez pas le droit de supprimer");
@@ -153,7 +140,7 @@ function ProductsList() {
 
             <table>
                 <thead>
-                <tr>
+                <tr className="table-header">
                     <th>ID</th>
                     <th>Nom</th>
                     <th>Catégorie</th>

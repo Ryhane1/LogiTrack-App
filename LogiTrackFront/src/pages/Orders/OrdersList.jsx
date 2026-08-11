@@ -12,10 +12,6 @@ function OrdersList() {
     const [clientId, setClientId] = useState("");
 
     useEffect(() => {
-        loadClients();
-    }, []);
-
-    useEffect(() => {
         loadOrders();
     }, [clientId, statutFilter]);
 
@@ -53,8 +49,8 @@ function OrdersList() {
     const handleStatusChange = async (orderId, newStatus) => {
         try {
             await api.put(`/orders/${orderId}/status`, {
-statut: newStatus
-});
+            statut: newStatus
+            });
 setOrders((currentOrders) =>
     currentOrders.map((order) =>
         order.id === orderId
@@ -81,6 +77,7 @@ return (
         <div className="container">
             <div className="header">
                 <h1>Liste des Commandes</h1>
+
                 <Link to="/orders/new" className="btn-add">
                     + Nouvelle commande
                 </Link>
@@ -109,7 +106,7 @@ return (
             </div>
             <table>
                 <thead>
-                <tr>
+                <tr className="table-header">
                     <th>ID</th>
                     <th>Date</th>
                     <th>Client</th>
@@ -142,6 +139,7 @@ return (
                             <td>
                                 <select
                                     value={order.statut}
+                                    disabled={order.statut === "LIVREE"}
                                     onChange={(e) =>
                                         handleStatusChange(
                                             order.id,

@@ -86,19 +86,6 @@ function ClientForm() {
             </div>
 
             <div className="form-group">
-              <label>Prénom</label>
-              <input
-                  type="text"
-                  {...register("prenom")}
-              />
-              {errors.prenom && (
-                  <span className="error">
-                                {errors.prenom.message}
-                            </span>
-              )}
-            </div>
-
-            <div className="form-group">
               <label>Email</label>
               <input
                   type="email"
@@ -125,13 +112,14 @@ function ClientForm() {
             </div>
 
             <div className="form-group">
-              <label>Adresse</label>
-              <textarea
-                  {...register("adresse")}
+              <label>Ville</label>
+              <input
+                  type="text"
+                  {...register("ville")}
               />
-              {errors.adresse && (
+              {errors.ville && (
                   <span className="error">
-                                {errors.adresse.message}
+                                {errors.ville.message}
                             </span>
               )}
             </div>

@@ -25,6 +25,12 @@ th,
 td {
     border: 1px solid #ddd;
 }
+.table-header th {
+    background: #007bff;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+}
 
 th,
 td {

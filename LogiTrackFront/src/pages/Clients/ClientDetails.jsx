@@ -39,10 +39,6 @@ function ClientDetails() {
             </p>
 
             <p>
-              <strong>Prénom :</strong> {client.prenom}
-            </p>
-
-            <p>
               <strong>Email :</strong> {client.email}
             </p>
 
@@ -51,47 +47,8 @@ function ClientDetails() {
             </p>
 
             <p>
-              <strong>Adresse :</strong> {client.adresse}
+              <strong>Ville :</strong> {client.ville}
             </p>
-
-            <h3>Commandes du client</h3>
-
-            {client.orders && client.orders.length > 0 ? (
-                <table>
-                  <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Date</th>
-                    <th>Statut</th>
-                    <th>Total</th>
-                    <th>Action</th>
-                  </tr>
-                  </thead>
-
-                  <tbody>
-                  {client.orders.map((order) => (
-                      <tr key={order.id}>
-                        <td>{order.id}</td>
-                        <td>{order.dateCommande}</td>
-                        <td>{order.statut}</td>
-                        <td>{order.total} DH</td>
-                        <td>
-                          <Link
-                              to={`/orders/${order.id}`}
-                              className="btn-info"
-                          >
-                            Voir
-                          </Link>
-                        </td>
-                      </tr>
-                  ))}
-                  </tbody>
-                </table>
-            ) : (
-                <p>
-                  Aucune commande trouvée.
-                </p>
-            )}
 
             <Link
                 to="/clients"
