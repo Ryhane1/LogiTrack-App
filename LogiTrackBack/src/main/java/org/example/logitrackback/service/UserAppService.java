@@ -66,6 +66,7 @@ public class UserAppService {
                 () -> new RuntimeException("User not Found")
         );
         user.setActive(false);
+        userAppRepository.save(user);
     }
 
 }

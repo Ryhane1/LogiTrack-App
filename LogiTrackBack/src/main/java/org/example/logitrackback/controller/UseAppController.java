@@ -59,8 +59,10 @@ public class UseAppController {
     }
 
     @PutMapping("/bannir/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Void> bannirUser(@PathVariable Long id){
-        return ResponseEntity.ok().body(userAppService.bannirUser(id));
+        userAppService.bannirUser(id);
+        return ResponseEntity.ok().build();
     }
 
 }
